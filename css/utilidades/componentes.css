@@ -28,3 +28,23 @@
     font-size: 1rem;
   }
 }
+
+.link {
+  display: inline-block;
+  color: var(--cor-p1);
+  font: 500% 1.5rem/1.5 "Poppins", arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: currentColor;
+  border-radius: 4px;
+}
+
+.link:hover {
+  color: var(--cor-0);
+}
