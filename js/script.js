@@ -3,7 +3,6 @@ const links = document.querySelectorAll('.header-menu a')
 
 function ativarLinks(link){
     if (location.href.includes(link.href)){
-        console.log(link.innerHTML)
         link.classList.add('ativo')
     }
 }
@@ -59,3 +58,8 @@ function eventosGaleria(img){
     img.addEventListener('click',trocarimagem)
 }
 galeria.forEach(eventosGaleria);
+
+// Animação
+if (window.SimpleAnime){
+    new SimpleAnime();
+}
